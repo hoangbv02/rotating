@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body {
+    line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+}
+.app {
+    position: relative;
+}
+.nav {
+    position: fixed;
+    color: #fff;
+    bottom: 100px;
+    transform: translateX(-100%);
+    transition: all .5s ease-in;
+}
+.nav.show {
+    transform: translateX(0);
+}
+.item {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: start;
+    margin-bottom: 30px;
+}
+.item:nth-child(1) {
+    margin-left: 20px;
+}
+.item:nth-child(2) {
+    margin-left: 30px;
+}
+.item:nth-child(3) {
+    margin-left: 45px;
+}
+.item i {
+    margin-right: 10px;
+}
+.menu {
+    position: fixed;
+    top: -90px;
+    left: -90px;
+    background-color: #ff7979;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 99;
+}
+.menu-list {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 120px;
+    right: 55px;
+    transform: rotate(180deg);
+    transition: all .5s ease-in;
+}
+.menu-item{
+    cursor: pointer;
+    font-size: 26px;
+
+}
+.menu-list.show {
+    transform: rotate(0deg);
+}
+.container {
+    transition: all 0.4s ease-in;
+    width: 100%;
+    background-color: white;
+    padding: 100px;
+    z-index: 98;
+}
+.container.show {
+    transform: rotate(-12deg);
+    margin: -120px 0 0px 200px;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+small {
+    font-style: italic;
+    color: #555;
+}
+p {
+    margin: 20px 0px;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
